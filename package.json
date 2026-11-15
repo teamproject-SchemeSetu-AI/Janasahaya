@@ -1,21 +1,24 @@
 {
-  "name": "janasahay-client",
-  "private": true,
+  "name": "janasahay",
   "version": "1.0.0",
-  "type": "module",
+  "description": "JanaSahay – Smart Government Schemes Discovery and Assistance Portal (South India)",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "node start.js",
+    "dev": "node start.js",
+    "server": "node server/server.js",
+    "client": "npm --prefix client run dev",
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "build:client": "npm --prefix client run build"
   },
-  "dependencies": {
-    "lucide-react": "^0.344.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.3"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react": "^4.2.1",
-    "vite": "^5.1.4"
-  }
+  "keywords": [
+    "janasahay",
+    "government-schemes",
+    "south-india",
+    "react",
+    "express",
+    "welfare",
+    "academic-project"
+  ],
+  "author": "JanaSahay Project Team - CSE AIML",
+  "license": "MIT"
 }
